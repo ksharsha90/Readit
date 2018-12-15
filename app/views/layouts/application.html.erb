@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div id="content">
+      <h1>ReadIT</h1>
+      <% unless flash[:notice].blank? %>
+        <div id="notification">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>  
     <%= yield %>
+    </div>
   </body>
 </html>
