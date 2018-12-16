@@ -1,0 +1,12 @@
+<%= form_tag session_path do %> 
+	<p>Please Log In:</p>
+	<p>
+		<label>Email:</label><br>
+		<%= email_field_tag 'email' %>
+	</p>
+	<p>
+		<label>Password:</label><br>
+		<%= password_field_tag 'password' %>
+	</p>
+	<p><%= submit_tag 'login' %></p>
+<% end %>
